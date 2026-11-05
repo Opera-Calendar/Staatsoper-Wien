@@ -1,0 +1,228 @@
+#!/usr/bin/env python3
+"""Wiener Staatsoper opera-only subscriptions (performances / ticket sale starts).
+
+Scrapes the publicly visible official opera calendar. No invented start times.
+Ticket-sale alarms live inside ticket-sale events (no separate reminder events).
+The website may change its HTML; this scraper reports extraction counts and fails
+rather than silently publishing an empty calendar.
+"""
+from __future__ import annotations
+
+import calendar
+import hashlib
+import re
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+import requests
+from bs4 import BeautifulSoup
+from dateutil.relativedelta import relativedelta
+
+BASE = 'https://www.wiener-staatsoper.at'
+TZ = ZoneInfo('Europe/Vienna')
+HEADERS = {'User-Agent': 'OperaCalendarSubscription/1.0 (public schedule; personal use)'}
+MONTH_NAMES = ('january','february','march','april','may','june','july','august','september','october','november','december')
+MONTH_ABBR = {m[:3].lower(): i for i,m in enumerate(MONTH_NAMES, 1)}
+DAY_RE = re.compile(r'^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)$')
+DATE_RE = re.compile(r'^(\d{1,2})\s+([A-Za-z]{3})$')
+CLOCK_RE = re.compile(r'^(\d{1,2}:\d{2})(?:\s*[—–-]\s*(\d{1,2}:\d{2}))?$')
+SALE_RE = re.compile(r'Ticket sale starts on\s+(\d{2})\.(\d{2})\.(\d{4})(?:,\s*(\d{2}:\d{2}))?', re.I)
+EXCLUDED = ('vienna opera ball','opera ball','dress rehearsal','ballett','ballet','concert','matinée','matinee','guided tour')
+ROLE_LABELS = {'musikalische leitung', 'conductor', 'dirigent'}
+
+
+def esc(value: str) -> str:
+    return str(value).replace('\\','\\\\').replace(';','\\;').replace(',','\\,').replace('\n','\\n')
+
+
+def fold(line: str) -> str:
+    out = []
+    while len(line.encode('utf-8')) > 74:
+        cut = 70
+        while len(line[:cut].encode('utf-8')) > 72:
+            cut -= 1
+        out.append(line[:cut]); line = ' ' + line[cut:]
+    out.append(line)
+    return '\r\n'.join(out)
+
+
+def download(year: int, month: int):
+    url = f'{BASE}/en/calendar/opera/{year}/{MONTH_NAMES[month-1]}/'
+    r = requests.get(url, headers=HEADERS, timeout=35)
+    r.raise_for_status()
+    return url, BeautifulSoup(r.text,'html.parser')
+
+
+def text_lines(soup):
+    for bad in soup(['script','style','noscript','svg']): bad.decompose()
+    return [re.sub(r'\s+', ' ',s).strip() for s in soup.get_text('\n', strip=True).splitlines() if s.strip()]
+
+
+def parse_month(year, month):
+    url, soup = download(year, month)
+    lines = text_lines(soup)
+    # The official website groups the entries by "Mon / 08 Feb / [time] / composer / title / Opera Main Stage".
+    # Read only the segment before the next weekday, and ignore cast/subscription excerpts.
+    result = []
+    positions = [i for i, line in enumerate(lines) if DAY_RE.fullmatch(line) and i+1 < len(lines) and DATE_RE.fullmatch(lines[i+1])]
+    for idx, start in enumerate(positions):
+        stop = positions[idx+1] if idx+1 < len(positions) else len(lines)
+        section = lines[start:stop]
+        match = DATE_RE.fullmatch(section[1]); day, mon = int(match[1]), MONTH_ABBR.get(match[2].lower())
+        if mon != month: continue
+        when = date(year, month, day)
+        # Structural markers: after the main-stage marker, the title is repeated as a header.
+        markers = [j for j, item in enumerate(section[:35]) if item.lower() in ('opera main stage','main stage')]
+        if not markers: continue
+        marker = markers[0]
+        top = section[2:marker]
+        # A title is the last named entry before the location marker, after possible composer.
+        # "Premiere" and "Dress Rehearsal" sometimes occur after title, before location.
+        top = [x for x in top if x.lower() not in ('premiere','dress rehearsal','pre-premiere','pre-première')]
+        times = [CLOCK_RE.fullmatch(x) for x in top if CLOCK_RE.fullmatch(x)]
+        starttime = times[0].group(1) if times else None
+        endtime = times[0].group(2) if times else None
+        names = [x for x in top if not CLOCK_RE.fullmatch(x)]
+        if len(names) < 2: continue
+        composer, title = names[-2], names[-1]
+        if any(b in title.lower() for b in EXCLUDED): continue
+        if 'dress rehearsal' in [s.lower() for s in section[:marker]]: continue
+        # Narrow text search so supplementary subscription entries do not become performances.
+        tail = section[marker+1:]
+        cast_line = next((x for x in tail[:8] if x.lower().startswith('with ')), '')
+        conductor = ''
+        if 'Conductor:' in cast_line:
+            conductor = cast_line.split('Conductor:',1)[1].strip()
+        else:
+            for i, x in enumerate(tail[:45]):
+                if x.lower() in ROLE_LABELS and i+1 < len(tail):
+                    conductor = tail[i+1]; break
+        cast = re.sub(r',?\s*Conductor:.*$', '', cast_line[5:]).strip() if cast_line else ''
+        # Individual published ticket-sale date, if included in public page text.
+        sale = None; verified = False
+        sm = SALE_RE.search(' '.join(tail))
+        if sm:
+            sale = datetime(int(sm[3]),int(sm[2]),int(sm[1]),*(map(int,(sm[4] or '10:00').split(':'))),tzinfo=TZ)
+            verified = True
+        else:
+            # Official regular-seat policy: 1st day of the month, 2 months before show month.
+            sale_month = when.replace(day=1) - relativedelta(months=2)
+            sale = datetime(sale_month.year,sale_month.month,1,10,0,tzinfo=TZ)
+        result.append(dict(day=when,title=title,composer=composer,start=starttime,end=endtime,
+                           conductor=conductor,cast=cast,sale=sale,verified=verified,url=url))
+    return result
+
+
+def event(item, stamp):
+    d = item['day']
+    key = f'{d.isoformat()}|{item["title"]}|{item["start"] or "unknown"}'
+    uid = hashlib.sha256(key.encode()).hexdigest()[:24]+'@vienna-opera-calendar'
+    lines = ['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{stamp}',f'SUMMARY:{esc(item["title"])}',
+             'LOCATION:Wiener Staatsoper\\, Wien']
+    if item['start']:
+        hh,mm = map(int,item['start'].split(':'))
+        begin = datetime(d.year,d.month,d.day,hh,mm,tzinfo=TZ)
+        if item['end']:
+            eh,em = map(int,item['end'].split(':'))
+            end = datetime(d.year,d.month,d.day,eh,em,tzinfo=TZ)
+            if end <= begin: end += timedelta(days=1)
+        else: end = begin + timedelta(hours=3)  # clearly labeled approximate
+        lines += [f'DTSTART;TZID=Europe/Vienna:{begin:%Y%m%dT%H%M%S}',
+                  f'DTEND;TZID=Europe/Vienna:{end:%Y%m%dT%H%M%S}']
+    else:
+        lines += [f'DTSTART;VALUE=DATE:{d:%Y%m%d}',f'DTEND;VALUE=DATE:{(d+timedelta(days=1)):%Y%m%d}']
+    sale = item['sale']
+    description = [f'Composer: {item["composer"]}']
+    if item['conductor']: description.append(f'Conductor: {item["conductor"]}')
+    if item['cast']: description.append(f'Main cast: {item["cast"]}')
+    description.append('End time: official' if item['end'] else ('End time: approx. 3h' if item['start'] else 'Starting time not verified; displayed as all-day'))
+    description.append(f'Seated-ticket public sale: {sale:%d.%m.%Y %H:%M} Vienna time (' + ('published on page)' if item['verified'] else 'calculated from official monthly sale policy; verify exceptions') + ')')
+    description.append(f'Source: {item["url"]}')
+    lines += [f'DESCRIPTION:{esc(chr(10).join(description))}',f'URL:{item["url"]}']
+    lines.append('END:VEVENT')
+    return lines
+
+
+def sale_event(sale, items, stamp):
+    """One 30-minute calendar event per unique sale-opening datetime, with embedded alerts."""
+    uid = hashlib.sha256(sale.isoformat().encode()).hexdigest()[:24]+'@vienna-opera-sales'
+    end = sale + timedelta(minutes=30)
+    works = sorted(set(x['title'] for x in items))
+    details = [f'{x["day"]:%d.%m.%Y}: {x["title"]}' for x in sorted(items,key=lambda x:(x['day'],x['title']))]
+    inferred = [x for x in items if not x['verified']]
+    description = ['Opera performances going on sale:', *details,
+                   'Sale opening: '+sale.strftime('%d.%m.%Y %H:%M')+' Vienna time',
+                   'Calculated using the standard monthly sale policy for '+str(len(inferred))+' performances; check for exceptions.' if inferred else 'Sale opening published on the official calendar.',
+                   'Reminders are alarms inside this event, not separate calendar events.',
+                   'Source: '+BASE+'/en/calendar/opera/']
+    title = 'Wiener Staatsoper – Ticket sales: '+', '.join(works[:3])
+    if len(works)>3: title+=f' (+{len(works)-3} more)'
+    lines = ['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{stamp}',
+             f'DTSTART;TZID=Europe/Vienna:{sale:%Y%m%dT%H%M%S}',
+             f'DTEND;TZID=Europe/Vienna:{end:%Y%m%dT%H%M%S}',
+             f'SUMMARY:{esc(title)}','LOCATION:Wiener Staatsoper\\, Wien',
+             f'DESCRIPTION:{esc(chr(10).join(description))}',
+             f'URL:{BASE}/en/calendar/opera/']
+    for label, offset in [('3 months',relativedelta(months=3)),
+                          ('1 month',relativedelta(months=1)),
+                          ('1 week',timedelta(days=7)),
+                          ('1 day',timedelta(days=1))]:
+        alarm = sale-offset
+        lines += ['BEGIN:VALARM','ACTION:DISPLAY',
+                  f'DESCRIPTION:{esc("Vienna opera ticket sales – "+label+" before")}',
+                  f'TRIGGER;VALUE=DATE-TIME:{alarm.astimezone(timezone.utc):%Y%m%dT%H%M%SZ}',
+                  'END:VALARM']
+    lines.append('END:VEVENT')
+    return lines
+
+
+def write_sales_ics(path, items):
+    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    lines = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Vienna Opera Calendar//EN',
+             'CALSCALE:GREGORIAN','METHOD:PUBLISH',
+             'X-WR-CALNAME:Wiener Staatsoper - Ticket Sales',
+             'X-WR-TIMEZONE:Europe/Vienna','REFRESH-INTERVAL;VALUE=DURATION:PT24H']
+    grouped={}
+    for item in items: grouped.setdefault(item['sale'],[]).append(item)
+    for sale, performances in sorted(grouped.items()):
+        lines.extend(sale_event(sale,performances,stamp))
+    lines.append('END:VCALENDAR')
+    Path(path).write_bytes(('\r\n'.join(map(fold,lines))+'\r\n').encode('utf-8'))
+
+
+def write_ics(path, items, name):
+    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    lines = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Vienna Opera Calendar//EN',
+             'CALSCALE:GREGORIAN','METHOD:PUBLISH',f'X-WR-CALNAME:{name}',
+             'X-WR-TIMEZONE:Europe/Vienna', 'REFRESH-INTERVAL;VALUE=DURATION:PT24H']
+    for item in sorted(items,key=lambda x:(x['day'],x['start'] or '',x['title'])):
+        lines.extend(event(item,stamp))
+    lines.append('END:VCALENDAR')
+    Path(path).write_bytes(('\r\n'.join(map(fold,lines))+'\r\n').encode('utf-8'))
+
+
+def main():
+    now = datetime.now(TZ).date()
+    # Search previous month (still relevant recently) and next 18 months; newly released seasons follow automatically.
+    first = now.replace(day=1)-relativedelta(months=1)
+    all_items=[]
+    successes=0
+    for i in range(20):
+        d=first+relativedelta(months=i)
+        try:
+            items=parse_month(d.year,d.month)
+            successes+=1
+            print(f'{d:%Y-%m}: {len(items)} operas')
+            all_items.extend(items)
+        except Exception as exc:
+            print(f'WARNING: {d:%Y-%m} unavailable: {exc}')
+    if successes < 3 or len(all_items)<5:
+        raise RuntimeError('Insufficient confirmed schedule data; existing .ics files left unchanged')
+    unique={ (x['day'],x['title'],x['start']):x for x in all_items }
+    shows=list(unique.values())
+    write_ics('vienna-opera.ics',shows,'Wiener Staatsoper - All Operas')
+    write_sales_ics('vienna-ticket-sales.ics',shows)
+    print(f'Wrote {len(shows)} opera performances and {len(set(x["sale"] for x in shows))} sale events')
+
+if __name__=='__main__': main()
