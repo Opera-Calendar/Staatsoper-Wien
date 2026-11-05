@@ -22,13 +22,13 @@ from dateutil.relativedelta import relativedelta
 BASE = 'https://www.wiener-staatsoper.at'
 TZ = ZoneInfo('Europe/Vienna')
 HEADERS = {'User-Agent': 'OperaCalendarSubscription/1.0 (public schedule; personal use)'}
-MONTH_NAMES = ('january','february','march','april','may','june','july','august','september','october','november','december')
-MONTH_ABBR = {m[:3].lower(): i for i,m in enumerate(MONTH_NAMES, 1)}
-DAY_RE = re.compile(r'^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)$')
-DATE_RE = re.compile(r'^(\d{1,2})\s+([A-Za-z]{3})$')
+MONTH_NAMES = ('januar','februar','maerz','april','mai','juni','juli','august','september','oktober','november','dezember')
+MONTH_ABBR = {'jan':1,'feb':2,'mär':3,'mrz':3,'mar':3,'apr':4,'mai':5,'jun':6,'jul':7,'aug':8,'sep':9,'okt':10,'nov':11,'dez':12}
+DAY_RE = re.compile(r'^(Mo|Di|Mi|Do|Fr|Sa|So)\.$')
+DATE_RE = re.compile(r'^(\d{1,2})\.?\s+([A-Za-zÄÖÜäöü]{3,10})\.?$')
 CLOCK_RE = re.compile(r'^(\d{1,2}:\d{2})(?:\s*[—–-]\s*(\d{1,2}:\d{2}))?$')
-SALE_RE = re.compile(r'Ticket sale starts on\s+(\d{2})\.(\d{2})\.(\d{4})(?:,\s*(\d{2}:\d{2}))?', re.I)
-EXCLUDED = ('vienna opera ball','opera ball','dress rehearsal','ballett','ballet','concert','matinée','matinee','guided tour')
+SALE_RE = re.compile(r'(?:Ticketverkauf\s+ab|Vorverkauf(?:sbeginn)?\s*(?:am|:))\s*(\d{1,2})\.(\d{1,2})\.(\d{4})(?:\s*(?:um|,)\s*(\d{1,2}:\d{2}))?', re.I)
+EXCLUDED = ('opernball','generalprobe','ballett','ballet','konzert','matinée','matinee','führung','kinderoper')
 ROLE_LABELS = {'musikalische leitung', 'conductor', 'dirigent'}
 
 
@@ -48,7 +48,7 @@ def fold(line: str) -> str:
 
 
 def download(year: int, month: int):
-    url = f'{BASE}/en/calendar/opera/{year}/{MONTH_NAMES[month-1]}/'
+    url = f'{BASE}/kalender/oper/{year}/{MONTH_NAMES[month-1]}/'
     r = requests.get(url, headers=HEADERS, timeout=35)
     r.raise_for_status()
     return url, BeautifulSoup(r.text,'html.parser')
@@ -69,36 +69,37 @@ def parse_month(year, month):
     for idx, start in enumerate(positions):
         stop = positions[idx+1] if idx+1 < len(positions) else len(lines)
         section = lines[start:stop]
-        match = DATE_RE.fullmatch(section[1]); day, mon = int(match[1]), MONTH_ABBR.get(match[2].lower())
+        match = DATE_RE.fullmatch(section[1]); day, mon = int(match[1]), MONTH_ABBR.get(match[2].lower()[:3])
         if mon != month: continue
         when = date(year, month, day)
         # Structural markers: after the main-stage marker, the title is repeated as a header.
-        markers = [j for j, item in enumerate(section[:35]) if item.lower() in ('opera main stage','main stage')]
+        markers = [j for j, item in enumerate(section[:35]) if item.lower() in ('oper großer saal','oper grosser saal')]
         if not markers: continue
         marker = markers[0]
         top = section[2:marker]
         # A title is the last named entry before the location marker, after possible composer.
         # "Premiere" and "Dress Rehearsal" sometimes occur after title, before location.
-        top = [x for x in top if x.lower() not in ('premiere','dress rehearsal','pre-premiere','pre-première')]
+        top = [x for x in top if x.lower() not in ('premiere','generalprobe','vorpremiere')]
         times = [CLOCK_RE.fullmatch(x) for x in top if CLOCK_RE.fullmatch(x)]
         starttime = times[0].group(1) if times else None
         endtime = times[0].group(2) if times else None
         names = [x for x in top if not CLOCK_RE.fullmatch(x)]
         if len(names) < 2: continue
         composer, title = names[-2], names[-1]
+        if len(title) > 110 or len(composer) > 110 or title.lower() in ('details','tickets','vorbestellen'): continue
         if any(b in title.lower() for b in EXCLUDED): continue
-        if 'dress rehearsal' in [s.lower() for s in section[:marker]]: continue
+        if 'generalprobe' in [s.lower() for s in section[:marker]]: continue
         # Narrow text search so supplementary subscription entries do not become performances.
         tail = section[marker+1:]
-        cast_line = next((x for x in tail[:8] if x.lower().startswith('with ')), '')
+        cast_line = next((x for x in tail[:8] if x.lower().startswith('mit ')), '')
         conductor = ''
-        if 'Conductor:' in cast_line:
-            conductor = cast_line.split('Conductor:',1)[1].strip()
+        if 'Musikalische Leitung:' in cast_line:
+            conductor = cast_line.split('Musikalische Leitung:',1)[1].strip()
         else:
             for i, x in enumerate(tail[:45]):
                 if x.lower() in ROLE_LABELS and i+1 < len(tail):
                     conductor = tail[i+1]; break
-        cast = re.sub(r',?\s*Conductor:.*$', '', cast_line[5:]).strip() if cast_line else ''
+        cast = re.sub(r',?\s*Musikalische Leitung:.*$', '', cast_line[4:]).strip() if cast_line else ''
         # Individual published ticket-sale date, if included in public page text.
         sale = None; verified = False
         sm = SALE_RE.search(' '.join(tail))
@@ -155,7 +156,7 @@ def sale_event(sale, items, stamp):
                    'Sale opening: '+sale.strftime('%d.%m.%Y %H:%M')+' Vienna time',
                    'Calculated using the standard monthly sale policy for '+str(len(inferred))+' performances; check for exceptions.' if inferred else 'Sale opening published on the official calendar.',
                    'Reminders are alarms inside this event, not separate calendar events.',
-                   'Source: '+BASE+'/en/calendar/opera/']
+                   'Source: '+BASE+'/kalender/oper/']
     title = 'Wiener Staatsoper – Ticket sales: '+', '.join(works[:3])
     if len(works)>3: title+=f' (+{len(works)-3} more)'
     lines = ['BEGIN:VEVENT',f'UID:{uid}',f'DTSTAMP:{stamp}',
@@ -163,7 +164,7 @@ def sale_event(sale, items, stamp):
              f'DTEND;TZID=Europe/Vienna:{end:%Y%m%dT%H%M%S}',
              f'SUMMARY:{esc(title)}','LOCATION:Wiener Staatsoper\\, Wien',
              f'DESCRIPTION:{esc(chr(10).join(description))}',
-             f'URL:{BASE}/en/calendar/opera/']
+             f'URL:{BASE}/kalender/oper/']
     for label, offset in [('3 months',relativedelta(months=3)),
                           ('1 month',relativedelta(months=1)),
                           ('1 week',timedelta(days=7)),
@@ -212,6 +213,7 @@ def main():
         d=first+relativedelta(months=i)
         try:
             items=parse_month(d.year,d.month)
+            items=[x for x in items if x['day'] >= now]
             successes+=1
             print(f'{d:%Y-%m}: {len(items)} operas')
             all_items.extend(items)
@@ -222,7 +224,7 @@ def main():
     unique={ (x['day'],x['title'],x['start']):x for x in all_items }
     shows=list(unique.values())
     write_ics('vienna-opera.ics',shows,'Wiener Staatsoper - All Operas')
-    write_sales_ics('vienna-ticket-sales.ics',shows)
+    write_sales_ics('vienna-ticket-sales.ics',[x for x in shows if x['sale'].date() >= now])
     print(f'Wrote {len(shows)} opera performances and {len(set(x["sale"] for x in shows))} sale events')
 
 if __name__=='__main__': main()
