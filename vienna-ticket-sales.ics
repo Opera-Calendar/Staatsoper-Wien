@@ -8,23 +8,23 @@ X-WR-TIMEZONE:Europe/Vienna
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
 BEGIN:VEVENT
 UID:e8d868ec87c4bfe22d52bd1f@vienna-opera-sales
-DTSTAMP:20261106T213425Z
+DTSTAMP:20261106T214304Z
 DTSTART;TZID=Europe/Vienna:20261201T100000
 DTEND;TZID=Europe/Vienna:20261201T103000
 SUMMARY:Wiener Staatsoper – Ticket sales: Der Rosen­kavalier\, Die Za
- uber­flöte für Kinder\, Norma (+2 more)
+ uber­flöte für Kinder\, Norma (+3 more)
 LOCATION:Wiener Staatsoper\, Wien
 DESCRIPTION:Opera performances going on sale:\n05.02.2027: Die Zauber­
  flöte für Kinder\n08.02.2027: Der Rosen­kavalier\n10.02.2027: Turand
  ot\n12.02.2027: Der Rosen­kavalier\n14.02.2027: Turandot\n15.02.2027:
   Der Rosen­kavalier\n17.02.2027: Turandot\n19.02.2027: Der Rosen­kava
- lier\n20.02.2027: Turandot\n21.02.2027: Un ballo in maschera\n22.02.2
- 027: Norma\n23.02.2027: Turandot\n24.02.2027: Un ballo in maschera\n2
- 6.02.2027: Norma\n27.02.2027: Un ballo in maschera\n28.02.2027: Norma
- \nSale opening: 01.12.2026 10:00 Vienna time\nCalculated using the st
- andard monthly sale policy for 16 performances\; check for exceptions
- .\nReminders are alarms inside this event\, not separate calendar eve
- nts.\nSource: https://www.wiener-staatsoper.at/kalender/oper/
+ lier\n20.02.2027: Turandot\n21.02.2027: Premiere\n22.02.2027: Norma\n
+ 23.02.2027: Turandot\n24.02.2027: Un ballo in maschera\n26.02.2027: N
+ orma\n27.02.2027: Un ballo in maschera\n28.02.2027: Norma\nSale openi
+ ng: 01.12.2026 10:00 Vienna time\nCalculated using the standard month
+ ly sale policy for 16 performances\; check for exceptions.\nReminders
+  are alarms inside this event\, not separate calendar events.\nSource
+ : https://www.wiener-staatsoper.at/kalender/oper/
 URL:https://www.wiener-staatsoper.at/kalender/oper/
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -45,6 +45,184 @@ BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Vienna opera ticket sales – 1 day before
 TRIGGER;VALUE=DATE-TIME:20261130T090000Z
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:92a6fbd0ddfde23b8816145e@vienna-opera-sales
+DTSTAMP:20261106T214304Z
+DTSTART;TZID=Europe/Vienna:20270101T100000
+DTEND;TZID=Europe/Vienna:20270101T103000
+SUMMARY:Wiener Staatsoper – Ticket sales: La Traviata\, Norma\, Parsif
+ al (+5 more)
+LOCATION:Wiener Staatsoper\, Wien
+DESCRIPTION:Opera performances going on sale:\n03.03.2027: Norma\n04.0
+ 3.2027: Tosca\n05.03.2027: Un ballo in maschera\n06.03.2027: Tosca\n0
+ 7.03.2027: Un ballo in maschera\n09.03.2027: Tosca\n10.03.2027: Un ba
+ llo in maschera\n11.03.2027: La Traviata\n14.03.2027: La Traviata\n15
+ .03.2027: Premiere\n17.03.2027: La Traviata\n18.03.2027: Pique Dame\n
+ 19.03.2027: Salome\n20.03.2027: La Traviata\n21.03.2027: Pique Dame\n
+ 23.03.2027: Salome\n24.03.2027: Pique Dame\n25.03.2027: Parsifal\n27.
+ 03.2027: Pique Dame\n28.03.2027: Salome\n29.03.2027: Parsifal\n31.03.
+ 2027: Salome\nSale opening: 01.01.2027 10:00 Vienna time\nCalculated 
+ using the standard monthly sale policy for 22 performances\; check fo
+ r exceptions.\nReminders are alarms inside this event\, not separate 
+ calendar events.\nSource: https://www.wiener-staatsoper.at/kalender/oper/
+URL:https://www.wiener-staatsoper.at/kalender/oper/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 3 months before
+TRIGGER;VALUE=DATE-TIME:20261001T080000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 month before
+TRIGGER;VALUE=DATE-TIME:20261201T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 week before
+TRIGGER;VALUE=DATE-TIME:20261225T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 day before
+TRIGGER;VALUE=DATE-TIME:20261231T090000Z
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b163c9dbba25fb37db3ae101@vienna-opera-sales
+DTSTAMP:20261106T214304Z
+DTSTART;TZID=Europe/Vienna:20270201T100000
+DTEND;TZID=Europe/Vienna:20270201T103000
+SUMMARY:Wiener Staatsoper – Ticket sales: Ariadne auf Naxos\, Carmen\,
+  Così fan tutte (+5 more)
+LOCATION:Wiener Staatsoper\, Wien
+DESCRIPTION:Opera performances going on sale:\n01.04.2027: Parsifal\n0
+ 2.04.2027: Il Barbiere di Siviglia\n03.04.2027: Parsifal\n04.04.2027:
+  Tristan und Isolde\n06.04.2027: Il Barbiere di Siviglia\n07.04.2027:
+  Manon Lescaut\n08.04.2027: Tristan und Isolde\n09.04.2027: Il Barbie
+ re di Siviglia\n10.04.2027: Manon Lescaut\n11.04.2027: Tristan und Is
+ olde\n14.04.2027: Manon Lescaut\n15.04.2027: Tristan und Isolde\n16.0
+ 4.2027: Così fan tutte\n17.04.2027: Ariadne auf Naxos\n18.04.2027: Ma
+ non Lescaut\n19.04.2027: Così fan tutte\n21.04.2027: Ariadne auf Naxo
+ s\n23.04.2027: Così fan tutte\n24.04.2027: Ariadne auf Naxos\n25.04.2
+ 027: Die tote Stadt\n26.04.2027: Così fan tutte\n28.04.2027: Die tote
+  Stadt\n29.04.2027: Così fan tutte\n30.04.2027: Carmen\nSale opening:
+  01.02.2027 10:00 Vienna time\nCalculated using the standard monthly 
+ sale policy for 24 performances\; check for exceptions.\nReminders ar
+ e alarms inside this event\, not separate calendar events.\nSource: h
+ ttps://www.wiener-staatsoper.at/kalender/oper/
+URL:https://www.wiener-staatsoper.at/kalender/oper/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 3 months before
+TRIGGER;VALUE=DATE-TIME:20261101T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 month before
+TRIGGER;VALUE=DATE-TIME:20270101T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 week before
+TRIGGER;VALUE=DATE-TIME:20270125T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 day before
+TRIGGER;VALUE=DATE-TIME:20270131T090000Z
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d397709a9533eb0fa53ff04d@vienna-opera-sales
+DTSTAMP:20261106T214304Z
+DTSTART;TZID=Europe/Vienna:20270301T100000
+DTEND;TZID=Europe/Vienna:20270301T103000
+SUMMARY:Wiener Staatsoper – Ticket sales: Arabella\, Carmen\, Der flie
+ gende Holländer (+5 more)
+LOCATION:Wiener Staatsoper\, Wien
+DESCRIPTION:Opera performances going on sale:\n01.05.2027: Die tote St
+ adt\n04.05.2027: Carmen\n05.05.2027: Die tote Stadt\n06.05.2027: Die 
+ Meistersinger von Nürnberg\n07.05.2027: Carmen\n08.05.2027: Die Zaube
+ r­flöte\n09.05.2027: Die Meistersinger von Nürnberg\n11.05.2027: Die
+  Zauber­flöte\n12.05.2027: Die Meistersinger von Nürnberg\n13.05.202
+ 7: L'Elisir d'amore\n14.05.2027: Die Zauber­flöte\n15.05.2027: L'Elis
+ ir d'amore\n16.05.2027: Die Meistersinger von Nürnberg\n17.05.2027: L
+ ulu\n18.05.2027: L'Elisir d'amore\n19.05.2027: Die Zauber­flöte\n20.0
+ 5.2027: Lulu\n22.05.2027: Arabella\n23.05.2027: Lulu\n26.05.2027: Lul
+ u\n27.05.2027: Arabella\n29.05.2027: Arabella\n30.05.2027: Der fliege
+ nde Holländer\nSale opening: 01.03.2027 10:00 Vienna time\nCalculated
+  using the standard monthly sale policy for 23 performances\; check f
+ or exceptions.\nReminders are alarms inside this event\, not separate
+  calendar events.\nSource: https://www.wiener-staatsoper.at/kalender/
+ oper/
+URL:https://www.wiener-staatsoper.at/kalender/oper/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 3 months before
+TRIGGER;VALUE=DATE-TIME:20261201T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 month before
+TRIGGER;VALUE=DATE-TIME:20270201T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 week before
+TRIGGER;VALUE=DATE-TIME:20270222T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 day before
+TRIGGER;VALUE=DATE-TIME:20270228T090000Z
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3ec450ecb120a16f3c2cefc1@vienna-opera-sales
+DTSTAMP:20261106T214304Z
+DTSTART;TZID=Europe/Vienna:20270401T100000
+DTEND;TZID=Europe/Vienna:20270401T103000
+SUMMARY:Wiener Staatsoper – Ticket sales: Andrea Chénier\, Arabella\,
+  Der fliegende Holländer (+4 more)
+LOCATION:Wiener Staatsoper\, Wien
+DESCRIPTION:Opera performances going on sale:\n01.06.2027: Arabella\n0
+ 3.06.2027: Der fliegende Holländer\n05.06.2027: Le nozze di Figaro\n0
+ 6.06.2027: Der fliegende Holländer\n08.06.2027: Le nozze di Figaro\n1
+ 0.06.2027: Der fliegende Holländer\n11.06.2027: Premiere\n12.06.2027:
+  Le nozze di Figaro\n14.06.2027: Le nozze di Figaro\n15.06.2027: I Ca
+ ­pu­le­ti e i Mon­tecchi\n17.06.2027: Un ballo in maschera\n18.06.2
+ 027: Andrea Chénier\n19.06.2027: I Ca­pu­le­ti e i Mon­tecchi\n20.
+ 06.2027: Un ballo in maschera\n21.06.2027: Andrea Chénier\n22.06.2027
+ : I Ca­pu­le­ti e i Mon­tecchi\n23.06.2027: Un ballo in maschera\n2
+ 4.06.2027: Andrea Chénier\n25.06.2027: I Ca­pu­le­ti e i Mon­tecch
+ i\n26.06.2027: Un ballo in maschera\n27.06.2027: Andrea Chénier\n29.0
+ 6.2027: I Ca­pu­le­ti e i Mon­tecchi\n30.06.2027: Andrea Chénier\n
+ Sale opening: 01.04.2027 10:00 Vienna time\nCalculated using the stan
+ dard monthly sale policy for 23 performances\; check for exceptions.\
+ nReminders are alarms inside this event\, not separate calendar event
+ s.\nSource: https://www.wiener-staatsoper.at/kalender/oper/
+URL:https://www.wiener-staatsoper.at/kalender/oper/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 3 months before
+TRIGGER;VALUE=DATE-TIME:20270101T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 month before
+TRIGGER;VALUE=DATE-TIME:20270301T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 week before
+TRIGGER;VALUE=DATE-TIME:20270325T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 day before
+TRIGGER;VALUE=DATE-TIME:20270331T080000Z
 END:VALARM
 END:VEVENT
 END:VCALENDAR
