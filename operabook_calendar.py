@@ -59,48 +59,45 @@ def text_lines(soup):
     return [re.sub(r'\s+', ' ',s).strip() for s in soup.get_text('\n', strip=True).splitlines() if s.strip()]
 
 
-def extract_date_before(lines, clock_index, year, month):
-    """Accept 'Sa. / 07 Nov.', 'Sa. / 07 / Nov.' and combined date lines.
+def extract_date_before(lines, marker, year, month):
+    """Locate the last nearby real calendar date, even if no time is shown.
 
-    Search only the local event header, not the entire page; subscription text
-    elsewhere can contain unrelated dates.
+    The opera listing sometimes has: weekday / date / composer / work /
+    category, without a clock. Do not infer a performance time.
     """
+    low = max(0, marker - 13)
     month_token = r'(?:Jan|Feb|Mär|Mrz|Mar|Apr|Mai|Jun|Jul|Aug|Sep|Okt|Nov|Dez)[a-zä]*\.?'
-    day_token = r'\d{1,2}\.?'
-    for width in (1, 2, 3):
-        for begin in range(clock_index - width, max(-1, clock_index - 9), -1):
-            if begin < 0:
+    weekday = {'mo': 0, 'di': 1, 'mi': 2, 'do': 3, 'fr': 4, 'sa': 5, 'so': 6}
+    for i in range(marker - 2, low - 1, -1):
+        candidates = []
+        # Date as one text node, or day/month split into adjacent nodes.
+        for width in (1, 2):
+            if i + width > marker - 1:
                 continue
-            sample = ' '.join(lines[begin:begin + width]).strip()
-            match = re.fullmatch(rf'({day_token})\s+({month_token})', sample, re.I)
-            if not match:
-                continue
-            day = int(match.group(1).rstrip('.'))
-            mon = MONTH_ABBR.get(match.group(2).lower().rstrip('.')[:3])
+            sample = ' '.join(lines[i:i + width])
+            m = re.fullmatch(rf'(\d{{1,2}})\.?\s+({month_token})', sample, re.I)
+            if m:
+                candidates.append((int(m.group(1)), m.group(2), i - 1))
+        # Weekday may be part of the same node as date.
+        m2 = re.fullmatch(rf'(Mo|Di|Mi|Do|Fr|Sa|So)\.?\s+(\d{{1,2}})\.?\s+({month_token})', lines[i], re.I)
+        if m2:
+            candidates.append((int(m2.group(2)), m2.group(3), i))
+        for day, month_name, weekday_pos in candidates:
+            mon = MONTH_ABBR.get(month_name.lower().rstrip('.')[:3])
             if mon != month:
                 continue
             try:
-                value = date(year, mon, day)
+                d = date(year, mon, day)
             except ValueError:
                 continue
-            # Guard against dates from prose: a calendar heading normally has
-            # the weekday directly before it.
-            preceding = lines[begin - 1] if begin > 0 else ''
-            if DAY_RE.fullmatch(preceding) and value.weekday() == ['Mo','Di','Mi','Do','Fr','Sa','So'].index(preceding[:2]):
-                return value
-            # Some layouts put the weekday and date in one text node.
-            if begin > 0 and re.fullmatch(r'(Mo|Di|Mi|Do|Fr|Sa|So)\.', preceding):
-                return value
-    # Combined weekday, day and month on a single line (mobile layout).
-    for i in range(max(0,clock_index - 7), clock_index):
-        m = re.fullmatch(rf'(Mo|Di|Mi|Do|Fr|Sa|So)\.?\s+(\d{{1,2}})\.?\s+({month_token})', lines[i], re.I)
-        if m and MONTH_ABBR.get(m.group(3).lower().rstrip('.')[:3]) == month:
-            try:
-                value = date(year, month, int(m.group(2)))
-                if value.weekday() == ['Mo','Di','Mi','Do','Fr','Sa','So'].index(m.group(1).title()):
-                    return value
-            except ValueError:
-                pass
+            if weekday_pos == i and m2:
+                token = m2.group(1).lower()
+            elif weekday_pos >= 0 and DAY_RE.fullmatch(lines[weekday_pos]):
+                token = lines[weekday_pos][:2].lower()
+            else:
+                continue
+            if d.weekday() == weekday[token]:
+                return d
     return None
 
 
@@ -108,70 +105,73 @@ def parse_month(year, month):
     url, soup = download(year, month)
     lines = text_lines(soup)
     result = []
-    # Each real event header is date / start–end / composer / work /
-    # 'Oper Großer Saal'. Look for the event category first: dates can be
-    # separated into two or three HTML text nodes and need not be consecutive.
-    candidate_markers = 0
-    rejected_dates = 0
-    for marker in range(len(lines)):
-        current = re.sub(r'\s+', ' ', lines[marker]).strip().casefold()
-        following = lines[marker + 1].strip().casefold() if marker + 1 < len(lines) else ''
-        category = re.fullmatch(r'oper\s+gro(?:ß|ss)er\s+saal', current) or (current == 'oper' and re.fullmatch(r'gro(?:ß|ss)er\s+saal', following))
+    markers = rejected_dates = missing_times = 0
+    for marker, raw in enumerate(lines):
+        current = re.sub(r'\s+', ' ', raw).strip().casefold()
+        next_line = lines[marker + 1].strip().casefold() if marker + 1 < len(lines) else ''
+        category = (re.fullmatch(r'oper\s+gro(?:ß|ss)er\s+saal', current)
+                    or (current == 'oper' and re.fullmatch(r'gro(?:ß|ss)er\s+saal', next_line)))
         if not category:
             continue
-        candidate_markers += 1
-        # The clock and composer/title must be *close* to the category.
-        # This excludes headings, prose and subscription references.
-        first = max(0, marker - 9)
-        clock_candidates = [i for i in range(first, marker) if CLOCK_RE.fullmatch(lines[i])]
-        if not clock_candidates:
+        markers += 1
+        # A listing ends with composer, then title, then the opera category;
+        # preceding clock (if any) is optional in the advance season listings.
+        if marker < 2:
             continue
-        clock_index = clock_candidates[-1]
-        names = [x for x in lines[clock_index + 1:marker] if x.casefold() not in ('premiere', 'vorpremiere', 'generalprobe')]
-        if len(names) != 2:
+        if lines[marker - 1].casefold() in ('generalprobe', 'vorpremiere'):
             continue
-        composer, title = names
-        if not (1 < len(composer) <= 110 and 1 < len(title) <= 110):
+        title, composer = lines[marker - 1], lines[marker - 2]
+        if (not 1 < len(title) <= 110 or not 1 < len(composer) <= 110
+                or CLOCK_RE.fullmatch(title) or CLOCK_RE.fullmatch(composer)
+                or any(x in title.casefold() for x in EXCLUDED)):
             continue
-        if any(b in title.casefold() for b in EXCLUDED):
-            continue
-        if 'generalprobe' in [x.casefold() for x in lines[max(0,clock_index - 3):marker]]:
-            continue
-        when = extract_date_before(lines,clock_index,year,month)
-        if when is None:
+        d = extract_date_before(lines, marker, year, month)
+        if d is None:
             rejected_dates += 1
             if rejected_dates <= 2:
-                print('DEBUG: unrecognised date header:',repr(lines[max(0,clock_index - 8):marker + 2]))
+                print('DEBUG: date not detected:', repr(lines[max(0, marker-10):marker+2]))
             continue
-        times = CLOCK_RE.fullmatch(lines[clock_index])
-        starttime, endtime = times.group(1), times.group(2)
-        # Do not scan as far as the next performance. Cast and sale information
-        # in the nearest card is used only if it follows this marker.
-        tail = lines[marker + (2 if current == 'oper' else 1):marker + 70]
-        next_header = next((i for i, x in enumerate(tail) if DAY_RE.fullmatch(x) and i > 2), len(tail))
-        tail = tail[:next_header]
+        # Do not include public/general rehearsals as an opera performance.
+        # Rehearsal markers immediately adjoining the title were removed above.
+        # Only accept a clock immediately preceding the composer or nearby
+        # a premiere tag; never substitute a guessed starting time.
+        possible_times = [x for x in lines[max(0,marker-5):marker-2]
+                          if CLOCK_RE.fullmatch(x)]
+        tm = CLOCK_RE.fullmatch(possible_times[-1]) if possible_times else None
+        starttime, endtime = (tm.group(1), tm.group(2)) if tm else (None, None)
+        if not tm:
+            missing_times += 1
+        # Cast info belongs to this performance card, not subscriptions
+        # or the next event. The page typically ends cast at 'Laden'.
+        tail = lines[marker + (2 if current == 'oper' else 1):marker + 85]
+        end_of_card = next((i for i,x in enumerate(tail)
+                            if x.casefold() == 'laden' or DAY_RE.fullmatch(x)), len(tail))
+        tail = tail[:end_of_card]
         cast_line = next((x for x in tail[:8] if x.casefold().startswith('mit ')), '')
         conductor = ''
-        m = re.search(r'Musikalische Leitung:\s*(.+)$',cast_line,re.I)
+        m = re.search(r'Musikalische Leitung:\s*(.+)$', cast_line, re.I)
         if m:
             conductor = m.group(1).strip()
         else:
-            for i,x in enumerate(tail[:45]):
-                if x.casefold() in ROLE_LABELS and i + 1 < len(tail):
-                    conductor = tail[i + 1]
+            for j,x in enumerate(tail[:45]):
+                if x.casefold() in ROLE_LABELS and j + 1 < len(tail):
+                    conductor = tail[j + 1]
                     break
         cast = re.sub(r',?\s*Musikalische Leitung:.*$', '', cast_line[4:], flags=re.I).strip() if cast_line else ''
         sm = SALE_RE.search(' '.join(tail))
         verified = bool(sm)
         if sm:
-            sale = datetime(int(sm[3]),int(sm[2]),int(sm[1]),*(map(int,(sm[4] or '10:00').split(':'))),tzinfo=TZ)
+            sale = datetime(int(sm[3]), int(sm[2]), int(sm[1]),
+                            *(map(int, (sm[4] or '10:00').split(':'))), tzinfo=TZ)
         else:
-            sale_month = when.replace(day=1) - relativedelta(months=2)
-            sale = datetime(sale_month.year,sale_month.month,1,10,0,tzinfo=TZ)
-        result.append(dict(day=when,title=title,composer=composer,start=starttime,end=endtime,
-                           conductor=conductor,cast=cast,sale=sale,verified=verified,url=url))
-    print(f'DEBUG: {year}-{month:02d}: {candidate_markers} category markers, '
-          f'{rejected_dates} unrecognised date headers, {len(result)} operas')
+            sale_month = d.replace(day=1) - relativedelta(months=2)
+            sale = datetime(sale_month.year, sale_month.month, 1, 10, 0, tzinfo=TZ)
+        result.append(dict(day=d, title=title, composer=composer, start=starttime,
+                           end=endtime, conductor=conductor, cast=cast,
+                           sale=sale, verified=verified, url=url))
+    print(f'DEBUG: {year}-{month:02d}: {markers} opera category markers, '
+          f'{rejected_dates} unrecognised dates, {missing_times} times not published, '
+          f'{len(result)} operas')
     return result
 
 
@@ -285,6 +285,6 @@ def main():
     shows=list(unique.values())
     write_ics('vienna-opera.ics',shows,'Wiener Staatsoper - All Operas')
     write_sales_ics('vienna-ticket-sales.ics',[x for x in shows if x['sale'].date() >= now])
-    print(f'Wrote {len(shows)} opera performances and {len(set(x["sale"] for x in shows))} sale events')
+    print(f'Wrote {len(shows)} opera performances and {len(set(x["sale"] for x in shows if x["sale"].date() >= now))} future sale events')
 
 if __name__=='__main__': main()
