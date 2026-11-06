@@ -1,0 +1,652 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vienna Opera Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Wiener Staatsoper - All Operas
+X-WR-TIMEZONE:Europe/Vienna
+REFRESH-INTERVAL;VALUE=DURATION:PT24H
+BEGIN:VEVENT
+UID:6ee0210c3d29e19029713e4d@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Fille du régiment
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261107T190000
+DTEND;TZID=Europe/Vienna:20261107T214500
+DESCRIPTION:Composer: Gaetano Donizetti\nConductor: Evelino Pidò\nEnd 
+ time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna ti
+ me (calculated from official monthly sale policy\; verify exceptions)
+ \nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:68ce6ae1a890fa1c1893e79a@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Otello
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261108T190000
+DTEND;TZID=Europe/Vienna:20261108T220000
+DESCRIPTION:Composer: Giuseppe Verdi\nConductor: Bertrand de Billy\nEn
+ d time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:2a69e0436da6f9bb120272f9@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Fille du régiment
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261110T190000
+DTEND;TZID=Europe/Vienna:20261110T214500
+DESCRIPTION:Composer: Gaetano Donizetti\nConductor: Evelino Pidò\nEnd 
+ time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna ti
+ me (calculated from official monthly sale policy\; verify exceptions)
+ \nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:7a72e90af5e52b0a93c9b498@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Fille du régiment
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261113T190000
+DTEND;TZID=Europe/Vienna:20261113T214500
+DESCRIPTION:Composer: Gaetano Donizetti\nConductor: Evelino Pidò\nEnd 
+ time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna ti
+ me (calculated from official monthly sale policy\; verify exceptions)
+ \nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:116cf2e9cd2ff365e7922ed7@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:L'Elisir d'amore
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261114T190000
+DTEND;TZID=Europe/Vienna:20261114T213000
+DESCRIPTION:Composer: Gaetano Donizetti\nConductor: Leonardo Sini\nEnd
+  time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna t
+ ime (calculated from official monthly sale policy\; verify exceptions
+ )\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:b49e7aaff29c8f307be0adee@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Madama Butterfly
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261115T190000
+DTEND;TZID=Europe/Vienna:20261115T214500
+DESCRIPTION:Composer: Giacomo Puccini\nEnd time: official\nSeated-tick
+ et public sale: 01.09.2026 10:00 Vienna time (calculated from officia
+ l monthly sale policy\; verify exceptions)\nSource: https://www.wiene
+ r-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:51d5d8ced10fbef65165bf48@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:L'Elisir d'amore
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261117T200000
+DTEND;TZID=Europe/Vienna:20261117T223000
+DESCRIPTION:Composer: Gaetano Donizetti\nConductor: Leonardo Sini\nEnd
+  time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna t
+ ime (calculated from official monthly sale policy\; verify exceptions
+ )\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:fc3c65f840e3eb066539b876@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Madama Butterfly
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261118T190000
+DTEND;TZID=Europe/Vienna:20261118T214500
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Giampaolo Bisanti\nE
+ nd time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna
+  time (calculated from official monthly sale policy\; verify exceptio
+ ns)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/nove
+ mber/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:9d7d778e90f3d4b94dc7acc3@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Madama Butterfly
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261120T190000
+DTEND;TZID=Europe/Vienna:20261120T214500
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Giampaolo Bisanti\nE
+ nd time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna
+  time (calculated from official monthly sale policy\; verify exceptio
+ ns)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/nove
+ mber/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:a5d4239a18d10ca873fafe2c@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Luisa Miller
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261121T190000
+DTEND;TZID=Europe/Vienna:20261121T220000
+DESCRIPTION:Composer: Giuseppe Verdi\nConductor: Daniele Callegari\nEn
+ d time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:5950f40af56e6610ad5f7c53@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Ariadne auf Naxos
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261122T190000
+DTEND;TZID=Europe/Vienna:20261122T211500
+DESCRIPTION:Composer: Richard Strauss\nEnd time: official\nSeated-tick
+ et public sale: 01.09.2026 10:00 Vienna time (calculated from officia
+ l monthly sale policy\; verify exceptions)\nSource: https://www.wiene
+ r-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:2bcd8c826465437fd94a62b3@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Luisa Miller
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261123T190000
+DTEND;TZID=Europe/Vienna:20261123T220000
+DESCRIPTION:Composer: Giuseppe Verdi\nConductor: Daniele Callegari\nEn
+ d time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:0d151c349cb60a4a72014c9b@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Madama Butterfly
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261124T190000
+DTEND;TZID=Europe/Vienna:20261124T214500
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Giampaolo Bisanti\nE
+ nd time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna
+  time (calculated from official monthly sale policy\; verify exceptio
+ ns)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/nove
+ mber/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:b8a86e0159420655bbc40b1c@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Ariadne auf Naxos
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261125T190000
+DTEND;TZID=Europe/Vienna:20261125T211500
+DESCRIPTION:Composer: Richard Strauss\nEnd time: official\nSeated-tick
+ et public sale: 01.09.2026 10:00 Vienna time (calculated from officia
+ l monthly sale policy\; verify exceptions)\nSource: https://www.wiene
+ r-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:5f7b620a66378f0aecde2abc@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Luisa Miller
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261127T190000
+DTEND;TZID=Europe/Vienna:20261127T220000
+DESCRIPTION:Composer: Giuseppe Verdi\nConductor: Daniele Callegari\nEn
+ d time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:f5764e8dc2782fbb268e6620@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Ariadne auf Naxos
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261128T190000
+DTEND;TZID=Europe/Vienna:20261128T211500
+DESCRIPTION:Composer: Richard Strauss\nEnd time: official\nSeated-tick
+ et public sale: 01.09.2026 10:00 Vienna time (calculated from officia
+ l monthly sale policy\; verify exceptions)\nSource: https://www.wiene
+ r-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:8e56d17b48daf921f3d2b9b2@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Luisa Miller
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261130T190000
+DTEND;TZID=Europe/Vienna:20261130T220000
+DESCRIPTION:Composer: Giuseppe Verdi\nConductor: Daniele Callegari\nEn
+ d time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
+END:VEVENT
+BEGIN:VEVENT
+UID:e08899aea8daa80bc4ffc6dc@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Ariadne auf Naxos
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261201T190000
+DTEND;TZID=Europe/Vienna:20261201T211500
+DESCRIPTION:Composer: Richard Strauss\nEnd time: official\nSeated-tick
+ et public sale: 01.10.2026 10:00 Vienna time (calculated from officia
+ l monthly sale policy\; verify exceptions)\nSource: https://www.wiene
+ r-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:45ce5f1add29411163fd0f81@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Ariadne auf Naxos
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261205T190000
+DTEND;TZID=Europe/Vienna:20261205T211500
+DESCRIPTION:Composer: Richard Strauss\nEnd time: official\nSeated-tick
+ et public sale: 01.10.2026 10:00 Vienna time (calculated from officia
+ l monthly sale policy\; verify exceptions)\nSource: https://www.wiene
+ r-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:b90646f7dde29e575c5e29ef@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Bohème
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261206T190000
+DTEND;TZID=Europe/Vienna:20261206T214500
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Domingo Hindoyan\nEn
+ d time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:c34b40a9505d6e4694bcc57f@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Bohème
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261208T190000
+DTEND;TZID=Europe/Vienna:20261208T214500
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Domingo Hindoyan\nEn
+ d time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:8b6d7956a8fed0eb53297d9f@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Die Zauber­flöte
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261212T190000
+DTEND;TZID=Europe/Vienna:20261212T221500
+DESCRIPTION:Composer: Wolfgang Amadeus Mozart\nEnd time: official\nSea
+ ted-ticket public sale: 01.10.2026 10:00 Vienna time (calculated from
+  official monthly sale policy\; verify exceptions)\nSource: https://w
+ ww.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:482ed8a412c9edd63b097414@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Bohème
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261213T180000
+DTEND;TZID=Europe/Vienna:20261213T204500
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Domingo Hindoyan\nEn
+ d time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:94885c526b54589898545336@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Die Zauber­flöte
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261215T183000
+DTEND;TZID=Europe/Vienna:20261215T214500
+DESCRIPTION:Composer: Wolfgang Amadeus Mozart\nEnd time: official\nSea
+ ted-ticket public sale: 01.10.2026 10:00 Vienna time (calculated from
+  official monthly sale policy\; verify exceptions)\nSource: https://w
+ ww.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:81ce597692690893c3065452@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Damnation de Faust
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261217T190000
+DTEND;TZID=Europe/Vienna:20261217T220000
+DESCRIPTION:Composer: Hector Berlioz\nConductor: Bertrand de Billy\nEn
+ d time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:2bb5288de1fe07d825b92647@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Die Zauber­flöte
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261218T190000
+DTEND;TZID=Europe/Vienna:20261218T221500
+DESCRIPTION:Composer: Wolfgang Amadeus Mozart\nEnd time: official\nSea
+ ted-ticket public sale: 01.10.2026 10:00 Vienna time (calculated from
+  official monthly sale policy\; verify exceptions)\nSource: https://w
+ ww.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:bf9a6d5a518cb1ec3c141eac@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Les Pêcheurs de perles
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261219T193000
+DTEND;TZID=Europe/Vienna:20261219T220000
+DESCRIPTION:Composer: Georges Bizet\nConductor: Emmanuel Villaume\nEnd
+  time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna t
+ ime (calculated from official monthly sale policy\; verify exceptions
+ )\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:775de9e94ba915a049b51400@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Damnation de Faust
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261220T190000
+DTEND;TZID=Europe/Vienna:20261220T220000
+DESCRIPTION:Composer: Hector Berlioz\nConductor: Bertrand de Billy\nEn
+ d time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:e77cea0dbf9d20a1b40cb00f@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Les Pêcheurs de perles
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261222T190000
+DTEND;TZID=Europe/Vienna:20261222T213000
+DESCRIPTION:Composer: Georges Bizet\nConductor: Emmanuel Villaume\nEnd
+  time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna t
+ ime (calculated from official monthly sale policy\; verify exceptions
+ )\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:ff82b6a6e4feb42a20880ad2@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Damnation de Faust
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261223T190000
+DTEND;TZID=Europe/Vienna:20261223T220000
+DESCRIPTION:Composer: Hector Berlioz\nConductor: Bertrand de Billy\nEn
+ d time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:1272a085e9a14746e3a1b4d4@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Les Pêcheurs de perles
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261225T160000
+DTEND;TZID=Europe/Vienna:20261225T183000
+DESCRIPTION:Composer: Georges Bizet\nConductor: Emmanuel Villaume\nEnd
+  time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna t
+ ime (calculated from official monthly sale policy\; verify exceptions
+ )\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:60a22c63b8b474ab7c5624a4@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Damnation de Faust
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261227T190000
+DTEND;TZID=Europe/Vienna:20261227T220000
+DESCRIPTION:Composer: Hector Berlioz\nConductor: Bertrand de Billy\nEn
+ d time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:8456a2d101778daab5316583@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:La Damnation de Faust
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20261229T190000
+DTEND;TZID=Europe/Vienna:20261229T220000
+DESCRIPTION:Composer: Hector Berlioz\nConductor: Bertrand de Billy\nEn
+ d time: official\nSeated-ticket public sale: 01.10.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
+END:VEVENT
+BEGIN:VEVENT
+UID:c60f260e5ddacf383fac172e@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Die Zauber­flöte für Kinder
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270205T170000
+DTEND;TZID=Europe/Vienna:20270205T180000
+DESCRIPTION:Composer: Wolfgang Amadeus Mozart\nEnd time: official\nSea
+ ted-ticket public sale: 01.12.2026 10:00 Vienna time (calculated from
+  official monthly sale policy\; verify exceptions)\nSource: https://w
+ ww.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:2a88ddb87cb0f3f23d17808c@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Der Rosen­kavalier
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270208T173000
+DTEND;TZID=Europe/Vienna:20270208T214500
+DESCRIPTION:Composer: Richard Strauss\nConductor: Sebastian Weigle\nEn
+ d time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:690f8f922353b99098981af9@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Turandot
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270210T190000
+DTEND;TZID=Europe/Vienna:20270210T213000
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Henrik Nánási\nEnd t
+ ime: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna tim
+ e (calculated from official monthly sale policy\; verify exceptions)\
+ nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:bc42a1d0ae555dacf0f9e179@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Der Rosen­kavalier
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270212T180000
+DTEND;TZID=Europe/Vienna:20270212T221500
+DESCRIPTION:Composer: Richard Strauss\nConductor: Sebastian Weigle\nEn
+ d time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:82bcf11157f2476af60d7d3e@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Turandot
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270214T190000
+DTEND;TZID=Europe/Vienna:20270214T213000
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Henrik Nánási\nEnd t
+ ime: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna tim
+ e (calculated from official monthly sale policy\; verify exceptions)\
+ nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:ba7b6627919c86e38b2c91c0@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Der Rosen­kavalier
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270215T173000
+DTEND;TZID=Europe/Vienna:20270215T214500
+DESCRIPTION:Composer: Richard Strauss\nConductor: Sebastian Weigle\nEn
+ d time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:b923d67b2bcf745c72ce56c9@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Turandot
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270217T190000
+DTEND;TZID=Europe/Vienna:20270217T213000
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Henrik Nánási\nEnd t
+ ime: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna tim
+ e (calculated from official monthly sale policy\; verify exceptions)\
+ nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:6f3c7c1fe15a275e40ce3afe@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Der Rosen­kavalier
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270219T180000
+DTEND;TZID=Europe/Vienna:20270219T221500
+DESCRIPTION:Composer: Richard Strauss\nConductor: Sebastian Weigle\nEn
+ d time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna 
+ time (calculated from official monthly sale policy\; verify exception
+ s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:50524bc106927b97e355414a@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Turandot
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270220T193000
+DTEND;TZID=Europe/Vienna:20270220T220000
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Henrik Nánási\nEnd t
+ ime: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna tim
+ e (calculated from official monthly sale policy\; verify exceptions)\
+ nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:b86e8ab2b98f5d225b9540e9@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Un ballo in maschera
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270221T190000
+DTEND;TZID=Europe/Vienna:20270221T214500
+DESCRIPTION:Composer: Giuseppe Verdi\nConductor: Michele Mariotti\nEnd
+  time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna t
+ ime (calculated from official monthly sale policy\; verify exceptions
+ )\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:db0d6ed0ac6f4d798cf157ae@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Norma
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270222T190000
+DTEND;TZID=Europe/Vienna:20270222T220000
+DESCRIPTION:Composer: Vincenzo Bellini\nConductor: Lorenzo Passerini\n
+ End time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienn
+ a time (calculated from official monthly sale policy\; verify excepti
+ ons)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/feb
+ ruar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:d61f60b7714ccbf7dfc2b5c4@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Turandot
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270223T190000
+DTEND;TZID=Europe/Vienna:20270223T213000
+DESCRIPTION:Composer: Giacomo Puccini\nConductor: Henrik Nánási\nEnd t
+ ime: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna tim
+ e (calculated from official monthly sale policy\; verify exceptions)\
+ nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:e54013d4d16b3d29d101708b@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Un ballo in maschera
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270224T190000
+DTEND;TZID=Europe/Vienna:20270224T214500
+DESCRIPTION:Composer: Giuseppe Verdi\nConductor: Michele Mariotti\nEnd
+  time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna t
+ ime (calculated from official monthly sale policy\; verify exceptions
+ )\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:6a1e6ceeefd7c98f5c5534bd@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Norma
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270226T190000
+DTEND;TZID=Europe/Vienna:20270226T220000
+DESCRIPTION:Composer: Vincenzo Bellini\nConductor: Lorenzo Passerini\n
+ End time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienn
+ a time (calculated from official monthly sale policy\; verify excepti
+ ons)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/feb
+ ruar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:3ae1f460cb1d2109b6d28633@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Un ballo in maschera
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270227T190000
+DTEND;TZID=Europe/Vienna:20270227T214500
+DESCRIPTION:Composer: Giuseppe Verdi\nConductor: Michele Mariotti\nEnd
+  time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienna t
+ ime (calculated from official monthly sale policy\; verify exceptions
+ )\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+BEGIN:VEVENT
+UID:c3791e460544dc562d09d114@vienna-opera-calendar
+DTSTAMP:20261106T213425Z
+SUMMARY:Norma
+LOCATION:Wiener Staatsoper\, Wien
+DTSTART;TZID=Europe/Vienna:20270228T190000
+DTEND;TZID=Europe/Vienna:20270228T220000
+DESCRIPTION:Composer: Vincenzo Bellini\nConductor: Lorenzo Passerini\n
+ End time: official\nSeated-ticket public sale: 01.12.2026 10:00 Vienn
+ a time (calculated from official monthly sale policy\; verify excepti
+ ons)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2027/feb
+ ruar/
+URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vienna Opera Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Wiener Staatsoper - Ticket Sales
+X-WR-TIMEZONE:Europe/Vienna
+REFRESH-INTERVAL;VALUE=DURATION:PT24H
+BEGIN:VEVENT
+UID:e8d868ec87c4bfe22d52bd1f@vienna-opera-sales
+DTSTAMP:20261106T213425Z
+DTSTART;TZID=Europe/Vienna:20261201T100000
+DTEND;TZID=Europe/Vienna:20261201T103000
+SUMMARY:Wiener Staatsoper – Ticket sales: Der Rosen­kavalier\, Die Za
+ uber­flöte für Kinder\, Norma (+2 more)
+LOCATION:Wiener Staatsoper\, Wien
+DESCRIPTION:Opera performances going on sale:\n05.02.2027: Die Zauber­
+ flöte für Kinder\n08.02.2027: Der Rosen­kavalier\n10.02.2027: Turand
+ ot\n12.02.2027: Der Rosen­kavalier\n14.02.2027: Turandot\n15.02.2027:
+  Der Rosen­kavalier\n17.02.2027: Turandot\n19.02.2027: Der Rosen­kava
+ lier\n20.02.2027: Turandot\n21.02.2027: Un ballo in maschera\n22.02.2
+ 027: Norma\n23.02.2027: Turandot\n24.02.2027: Un ballo in maschera\n2
+ 6.02.2027: Norma\n27.02.2027: Un ballo in maschera\n28.02.2027: Norma
+ \nSale opening: 01.12.2026 10:00 Vienna time\nCalculated using the st
+ andard monthly sale policy for 16 performances\; check for exceptions
+ .\nReminders are alarms inside this event\, not separate calendar eve
+ nts.\nSource: https://www.wiener-staatsoper.at/kalender/oper/
+URL:https://www.wiener-staatsoper.at/kalender/oper/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 3 months before
+TRIGGER;VALUE=DATE-TIME:20260901T080000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 month before
+TRIGGER;VALUE=DATE-TIME:20261101T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 week before
+TRIGGER;VALUE=DATE-TIME:20261124T090000Z
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vienna opera ticket sales – 1 day before
+TRIGGER;VALUE=DATE-TIME:20261130T090000Z
+END:VALARM
+END:VEVENT
+END:VCALENDAR
