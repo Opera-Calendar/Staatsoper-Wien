@@ -72,19 +72,33 @@ def parse_month(year, month):
         match = DATE_RE.fullmatch(section[1]); day, mon = int(match[1]), MONTH_ABBR.get(match[2].lower()[:3])
         if mon != month: continue
         when = date(year, month, day)
-        # Structural markers: after the main-stage marker, the title is repeated as a header.
-        markers = [j for j, item in enumerate(section[:35]) if item.lower() in ('oper großer saal','oper grosser saal')]
-        if not markers: continue
-        marker = markers[0]
+        # The site may separate "Oper" and "Großer Saal" into different
+        # HTML text nodes. Detect the category without requiring one string.
+        # The event header is: weekday, date, time, composer, work, category.
+        def normalized(value):
+            return re.sub(r"\s+", " ", value).strip().lower()
+
+        marker = None
+        for j in range(2, min(len(section), 24)):
+            current = normalized(section[j])
+            following = normalized(section[j + 1]) if j + 1 < len(section) else ""
+            combined = " ".join(normalized(x) for x in section[j:j+3])
+            if (re.fullmatch(r"oper\s+gro(?:ß|ss)er\s+saal", current)
+                or (current == "oper" and re.fullmatch(r"gro(?:ß|ss)er saal", following))
+                or re.match(r"^oper\s+gro(?:ß|ss)er\s+saal(?:\s|$)", combined)
+                or (current in ("großer saal", "grosser saal") and j > 2 and normalized(section[j-1]) == "oper")):
+                marker = j
+                break
+        if marker is None:
+            continue
         top = section[2:marker]
-        # A title is the last named entry before the location marker, after possible composer.
-        # "Premiere" and "Dress Rehearsal" sometimes occur after title, before location.
         top = [x for x in top if x.lower() not in ('premiere','generalprobe','vorpremiere')]
         times = [CLOCK_RE.fullmatch(x) for x in top if CLOCK_RE.fullmatch(x)]
         starttime = times[0].group(1) if times else None
         endtime = times[0].group(2) if times else None
         names = [x for x in top if not CLOCK_RE.fullmatch(x)]
-        if len(names) < 2: continue
+        if len(names) < 2:
+            continue
         composer, title = names[-2], names[-1]
         if len(title) > 110 or len(composer) > 110 or title.lower() in ('details','tickets','vorbestellen'): continue
         if any(b in title.lower() for b in EXCLUDED): continue
@@ -112,6 +126,12 @@ def parse_month(year, month):
             sale = datetime(sale_month.year,sale_month.month,1,10,0,tzinfo=TZ)
         result.append(dict(day=when,title=title,composer=composer,start=starttime,end=endtime,
                            conductor=conductor,cast=cast,sale=sale,verified=verified,url=url))
+    if not result:
+        print(f"DEBUG: {year}-{month:02d}: {len(positions)} date sections, "
+              f"{sum(1 for x in lines if x.strip().lower() == 'oper')} isolated opera labels, "
+              f"{sum(1 for x in lines if 'großer saal' in x.lower())} main-stage labels")
+        for pos in positions[:2]:
+            print('DEBUG: sample event header:', repr(lines[pos:pos+12]))
     return result
 
 
