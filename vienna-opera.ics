@@ -7,21 +7,8 @@ X-WR-CALNAME:Wiener Staatsoper - All Operas
 X-WR-TIMEZONE:Europe/Vienna
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
 BEGIN:VEVENT
-UID:a5d4239a18d10ca873fafe2c@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
-SUMMARY:Luisa Miller
-LOCATION:Wiener Staatsoper\, Wien
-DTSTART;TZID=Europe/Vienna:20261121T190000
-DTEND;TZID=Europe/Vienna:20261121T220000
-DESCRIPTION:Composer: Giuseppe Verdi\nConductor: Daniele Callegari\nEn
- d time: official\nSeated-ticket public sale: 01.09.2026 10:00 Vienna 
- time (calculated from official monthly sale policy\; verify exception
- s)\nSource: https://www.wiener-staatsoper.at/kalender/oper/2026/november/
-URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
-END:VEVENT
-BEGIN:VEVENT
 UID:eb0226cf3b2313d73751e7ac@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Premiere
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261122T190000
@@ -34,7 +21,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
 END:VEVENT
 BEGIN:VEVENT
 UID:2bcd8c826465437fd94a62b3@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Luisa Miller
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261123T190000
@@ -47,7 +34,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
 END:VEVENT
 BEGIN:VEVENT
 UID:0d151c349cb60a4a72014c9b@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Madama Butterfly
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261124T190000
@@ -60,7 +47,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
 END:VEVENT
 BEGIN:VEVENT
 UID:b8a86e0159420655bbc40b1c@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Ariadne auf Naxos
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261125T190000
@@ -73,7 +60,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
 END:VEVENT
 BEGIN:VEVENT
 UID:5f7b620a66378f0aecde2abc@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Luisa Miller
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261127T190000
@@ -86,7 +73,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
 END:VEVENT
 BEGIN:VEVENT
 UID:f5764e8dc2782fbb268e6620@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Ariadne auf Naxos
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261128T190000
@@ -99,7 +86,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
 END:VEVENT
 BEGIN:VEVENT
 UID:8e56d17b48daf921f3d2b9b2@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Luisa Miller
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261130T190000
@@ -112,7 +99,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/november/
 END:VEVENT
 BEGIN:VEVENT
 UID:e08899aea8daa80bc4ffc6dc@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Ariadne auf Naxos
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261201T190000
@@ -125,7 +112,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:45ce5f1add29411163fd0f81@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Ariadne auf Naxos
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261205T190000
@@ -138,7 +125,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:b90646f7dde29e575c5e29ef@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Bohème
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261206T190000
@@ -151,7 +138,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:c34b40a9505d6e4694bcc57f@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Bohème
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261208T190000
@@ -164,7 +151,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:8b6d7956a8fed0eb53297d9f@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Zauber­flöte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261212T190000
@@ -177,7 +164,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:482ed8a412c9edd63b097414@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Bohème
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261213T180000
@@ -190,7 +177,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:94885c526b54589898545336@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Zauber­flöte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261215T183000
@@ -203,7 +190,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:5d5efdb1466cfe153aaf5876@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Premiere
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261217T190000
@@ -217,7 +204,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:2bb5288de1fe07d825b92647@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Zauber­flöte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261218T190000
@@ -230,7 +217,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:bf9a6d5a518cb1ec3c141eac@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Les Pêcheurs de perles
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261219T193000
@@ -243,7 +230,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:775de9e94ba915a049b51400@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Damnation de Faust
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261220T190000
@@ -256,7 +243,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:e77cea0dbf9d20a1b40cb00f@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Les Pêcheurs de perles
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261222T190000
@@ -269,7 +256,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:ff82b6a6e4feb42a20880ad2@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Damnation de Faust
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261223T190000
@@ -282,7 +269,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:1272a085e9a14746e3a1b4d4@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Les Pêcheurs de perles
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261225T160000
@@ -295,7 +282,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:60a22c63b8b474ab7c5624a4@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Damnation de Faust
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261227T190000
@@ -308,7 +295,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:8456a2d101778daab5316583@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Damnation de Faust
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20261229T190000
@@ -321,7 +308,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2026/dezember/
 END:VEVENT
 BEGIN:VEVENT
 UID:c60f260e5ddacf383fac172e@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Zauber­flöte für Kinder
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270205T170000
@@ -334,7 +321,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:2a88ddb87cb0f3f23d17808c@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Der Rosen­kavalier
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270208T173000
@@ -347,7 +334,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:690f8f922353b99098981af9@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Turandot
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270210T190000
@@ -360,7 +347,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:bc42a1d0ae555dacf0f9e179@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Der Rosen­kavalier
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270212T180000
@@ -373,7 +360,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:82bcf11157f2476af60d7d3e@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Turandot
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270214T190000
@@ -386,7 +373,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:ba7b6627919c86e38b2c91c0@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Der Rosen­kavalier
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270215T173000
@@ -399,7 +386,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:b923d67b2bcf745c72ce56c9@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Turandot
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270217T190000
@@ -412,7 +399,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:6f3c7c1fe15a275e40ce3afe@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Der Rosen­kavalier
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270219T180000
@@ -425,7 +412,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:50524bc106927b97e355414a@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Turandot
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270220T193000
@@ -438,7 +425,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:097720e95f6c05bd7b31222d@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Premiere
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270221T190000
@@ -452,7 +439,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:db0d6ed0ac6f4d798cf157ae@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Norma
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270222T190000
@@ -466,7 +453,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:d61f60b7714ccbf7dfc2b5c4@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Turandot
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270223T190000
@@ -479,7 +466,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:e54013d4d16b3d29d101708b@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Un ballo in maschera
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270224T190000
@@ -492,7 +479,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:6a1e6ceeefd7c98f5c5534bd@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Norma
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270226T190000
@@ -506,7 +493,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:3ae1f460cb1d2109b6d28633@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Un ballo in maschera
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270227T190000
@@ -519,7 +506,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:c3791e460544dc562d09d114@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Norma
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;TZID=Europe/Vienna:20270228T190000
@@ -533,7 +520,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/februar/
 END:VEVENT
 BEGIN:VEVENT
 UID:9b84964511521bcc72289651@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Norma
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270303
@@ -547,7 +534,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:1ed1f0f9df1a5ea715f1887a@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Tosca
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270304
@@ -561,7 +548,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:d197cb9fcbf52aae52c43885@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Un ballo in maschera
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270305
@@ -575,7 +562,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:d9f8653b69c06b259d22fffe@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Tosca
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270306
@@ -589,7 +576,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:2d53156085d7d30604d03e53@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Un ballo in maschera
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270307
@@ -603,7 +590,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:5c4ac6d3b0abc301dc99809e@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Tosca
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270309
@@ -617,7 +604,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:a6144fc8d1386e2c339b9e4b@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Un ballo in maschera
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270310
@@ -631,7 +618,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:cb2624fd5bea8c1306469e63@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Traviata
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270311
@@ -645,7 +632,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:495fd8398d3653912440ce40@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Traviata
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270314
@@ -659,7 +646,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:bbb4e29c118bb891e05808f7@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Premiere
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270315
@@ -673,7 +660,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:2a3d5fab4d6b73a1b65dfa2d@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Traviata
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270317
@@ -687,7 +674,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:d7fe917fd52206e9dd0b229f@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Pique Dame
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270318
@@ -701,7 +688,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:83f75ff2bdd392e5e5057405@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Salome
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270319
@@ -715,7 +702,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:51414da5591dd6da22ec119d@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:La Traviata
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270320
@@ -729,7 +716,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:7871c5902aa47b6f182c144d@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Pique Dame
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270321
@@ -743,7 +730,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:7dec11c295fa90050bac3264@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Salome
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270323
@@ -757,7 +744,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:bba560ba22acfb92b477b34a@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Pique Dame
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270324
@@ -771,7 +758,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:d89ac2fe69537c0fab7bc9df@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Parsifal
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270325
@@ -785,7 +772,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:4d3409c95093be1724c5f323@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Pique Dame
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270327
@@ -799,7 +786,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:e878ba28d37c6eb7f8511302@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Salome
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270328
@@ -813,7 +800,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:bf5047575b6aa588a0688323@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Parsifal
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270329
@@ -827,7 +814,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:8588f55fdd649d93493bfa52@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Salome
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270331
@@ -841,7 +828,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/maerz/
 END:VEVENT
 BEGIN:VEVENT
 UID:a34cf2da20b51a61c61fb13d@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Parsifal
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270401
@@ -855,7 +842,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:c5fa3acd1ee080bc5c8af3f5@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Il Barbiere di Siviglia
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270402
@@ -869,7 +856,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:9231753897fd3faf525e6cd1@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Parsifal
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270403
@@ -883,7 +870,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:005763ffd17a876c64c92a32@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Tristan und Isolde
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270404
@@ -897,7 +884,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:8dfa2dd54f10c2210deca835@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Il Barbiere di Siviglia
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270406
@@ -911,7 +898,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:53420d4b1ff0c32609c9179d@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Manon Lescaut
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270407
@@ -925,7 +912,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:388e30a86bf229f6434057a9@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Tristan und Isolde
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270408
@@ -939,7 +926,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:6d2345ae13d889bd55cf8d44@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Il Barbiere di Siviglia
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270409
@@ -953,7 +940,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:0d737624e6fdefa4c3c98cbe@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Manon Lescaut
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270410
@@ -967,7 +954,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:51c3e52ab66f29aca020846d@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Tristan und Isolde
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270411
@@ -981,7 +968,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:c1e6452dea61564d12868261@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Manon Lescaut
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270414
@@ -995,7 +982,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:b931ba1e44c9d5de12968d72@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Tristan und Isolde
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270415
@@ -1009,7 +996,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:d11aa36eca10361a3b44ead2@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Così fan tutte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270416
@@ -1023,7 +1010,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:fc608aa575fe58b079ece994@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Ariadne auf Naxos
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270417
@@ -1037,7 +1024,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:972796785c070f7a0c5fbf05@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Manon Lescaut
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270418
@@ -1051,7 +1038,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:ea8d11b3bbc188c07a76cc30@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Così fan tutte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270419
@@ -1065,7 +1052,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:bf0f4f864451ede99d4f6346@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Ariadne auf Naxos
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270421
@@ -1079,7 +1066,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:04a51c3fe523f1b72570b088@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Così fan tutte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270423
@@ -1093,7 +1080,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:e39095bb74287f3c5a41ca45@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Ariadne auf Naxos
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270424
@@ -1107,7 +1094,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:4acad0f8e8077d61b1e10e80@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die tote Stadt
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270425
@@ -1121,7 +1108,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:44c677718faa3849798a5d46@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Così fan tutte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270426
@@ -1135,7 +1122,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:4c9afbfdb16dfb1c1a61a7b2@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die tote Stadt
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270428
@@ -1149,7 +1136,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:b354b781dce273246865cccb@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Così fan tutte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270429
@@ -1163,7 +1150,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:da634516efafa5b0f49f236c@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Carmen
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270430
@@ -1177,7 +1164,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/april/
 END:VEVENT
 BEGIN:VEVENT
 UID:2ecdf75a62c229bb23da1141@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die tote Stadt
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270501
@@ -1191,7 +1178,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:53c5714c4ea717162b7fe5f8@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Carmen
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270504
@@ -1205,7 +1192,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:a1697137189dc10df715c3b1@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die tote Stadt
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270505
@@ -1219,7 +1206,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:6d767ea46c706641b1a0433b@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Meistersinger von Nürnberg
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270506
@@ -1233,7 +1220,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:b2e834c29ef8be96c37656c2@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Carmen
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270507
@@ -1247,7 +1234,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:ca40ea8d1f7d15c209c51b11@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Zauber­flöte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270508
@@ -1261,7 +1248,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:0522aa0e2443877209ab8456@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Meistersinger von Nürnberg
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270509
@@ -1275,7 +1262,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:ef2738d53927b1a4a0af3733@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Zauber­flöte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270511
@@ -1289,7 +1276,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:f7510639872c0a5ac91be118@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Meistersinger von Nürnberg
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270512
@@ -1303,7 +1290,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:55813fb948d81e57b9416e97@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:L'Elisir d'amore
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270513
@@ -1317,7 +1304,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:17631efd278df846638e8080@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Zauber­flöte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270514
@@ -1331,7 +1318,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:69b27472fa438f2e15fc1bdd@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:L'Elisir d'amore
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270515
@@ -1345,7 +1332,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:16b0d40734777dbe37022767@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Meistersinger von Nürnberg
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270516
@@ -1359,7 +1346,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:271830d9b8013db0271a6fba@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Lulu
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270517
@@ -1373,7 +1360,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:4b8021be4046d33c768b272f@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:L'Elisir d'amore
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270518
@@ -1387,7 +1374,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:cb02e04294baddab4f390ee4@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Die Zauber­flöte
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270519
@@ -1401,7 +1388,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:c695f7b11874de850d19aaef@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Lulu
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270520
@@ -1415,7 +1402,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:b7ea15b3f040086cf56db481@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Arabella
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270522
@@ -1429,7 +1416,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:1a809501466003c1b84da7dc@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Lulu
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270523
@@ -1443,7 +1430,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:060b123f0b49b1fe19b2edbc@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Lulu
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270526
@@ -1457,7 +1444,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:99ee158e1afac68960c0cfa0@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Arabella
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270527
@@ -1471,7 +1458,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:0fa22bf5ad670b2d6b1a6556@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Arabella
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270529
@@ -1485,7 +1472,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:e666d0c14211694eb337bdae@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Der fliegende Holländer
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270530
@@ -1499,7 +1486,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/mai/
 END:VEVENT
 BEGIN:VEVENT
 UID:cc664191e43fc0953422e6ff@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Arabella
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270601
@@ -1513,7 +1500,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:b34d20d533c6e5f4d515795c@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Der fliegende Holländer
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270603
@@ -1527,7 +1514,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:cfb3a300ba2b16a03e910512@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Le nozze di Figaro
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270605
@@ -1541,7 +1528,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:89119d948cb09111a02917ff@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Der fliegende Holländer
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270606
@@ -1555,7 +1542,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:30ef7bc502064dd37a114aae@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Le nozze di Figaro
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270608
@@ -1569,7 +1556,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:251ce5f74ac4c7caa042c817@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Der fliegende Holländer
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270610
@@ -1583,7 +1570,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:8c9928d565880cea497aa384@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Premiere
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270611
@@ -1597,7 +1584,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:dc670c53428119089ca51f9e@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Le nozze di Figaro
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270612
@@ -1611,7 +1598,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:d4485c5fd3765be20869261c@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Le nozze di Figaro
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270614
@@ -1625,7 +1612,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:ae868cca628ab9e220b1cee5@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:I Ca­pu­le­ti e i Mon­tecchi
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270615
@@ -1639,7 +1626,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:5b966bbf31ebf5b802a04ab3@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Un ballo in maschera
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270617
@@ -1653,7 +1640,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:5c97f1d9ac69fe947018bea8@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Andrea Chénier
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270618
@@ -1667,7 +1654,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:6cdc8f282cdd4a5bef05b1e3@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:I Ca­pu­le­ti e i Mon­tecchi
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270619
@@ -1681,7 +1668,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:f22860cd798a41211978f96b@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Un ballo in maschera
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270620
@@ -1695,7 +1682,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:62417ceee7a6fb17e7d8d784@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Andrea Chénier
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270621
@@ -1709,7 +1696,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:f079137804761a1f316b703e@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:I Ca­pu­le­ti e i Mon­tecchi
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270622
@@ -1723,7 +1710,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:fc62bda12c9af440b38ea45b@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Un ballo in maschera
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270623
@@ -1737,7 +1724,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:52f2fa6b0ea94aab1d36f3c9@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Andrea Chénier
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270624
@@ -1751,7 +1738,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:b6255ee98a187b2eeaac1ad9@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:I Ca­pu­le­ti e i Mon­tecchi
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270625
@@ -1765,7 +1752,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:5138191c3ee23c084d1e046c@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Un ballo in maschera
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270626
@@ -1779,7 +1766,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:f344e16a9ca26a753189e56e@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Andrea Chénier
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270627
@@ -1793,7 +1780,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:6f565dc1d9b2026c5ff3d562@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:I Ca­pu­le­ti e i Mon­tecchi
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270629
@@ -1807,7 +1794,7 @@ URL:https://www.wiener-staatsoper.at/kalender/oper/2027/juni/
 END:VEVENT
 BEGIN:VEVENT
 UID:27f522afcea1492caac90ef2@vienna-opera-calendar
-DTSTAMP:20261121T073545Z
+DTSTAMP:20261122T073607Z
 SUMMARY:Andrea Chénier
 LOCATION:Wiener Staatsoper\, Wien
 DTSTART;VALUE=DATE:20270630
